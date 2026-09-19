@@ -12,6 +12,7 @@ import org.cf0x.konamiku.data.AppLocale
 import org.cf0x.konamiku.system.UpdateManager
 import org.cf0x.konamiku.util.applyLocale
 import org.cf0x.konamiku.xposed.XposedActivationState
+import org.cf0x.konamiku.xposed.XposedFrameworkDetector
 import org.cf0x.konamiku.xposed.XposedState
 
 class KonamikuApp : Application(), XposedServiceHelper.OnServiceListener {
@@ -48,12 +49,13 @@ class KonamikuApp : Application(), XposedServiceHelper.OnServiceListener {
 
         applyLocale(effectiveTag)
 
+        XposedFrameworkDetector.fillMissingState(this)
         XposedServiceHelper.registerListener(this)
     }
 
     override fun onServiceBind(service: XposedService) {
-        XposedState.frameworkName    = service.frameworkName
-        XposedState.frameworkVersion = service.frameworkVersion
+        service.frameworkName.takeIf { it.isNotBlank() }?.let { XposedState.frameworkName = it }
+        service.frameworkVersion.takeIf { it.isNotBlank() }?.let { XposedState.frameworkVersion = it }
 
         XposedState.pmmActive = getSharedPreferences("KonamikU_xposed", MODE_PRIVATE)
             .getBoolean("pmmtool_active", false)

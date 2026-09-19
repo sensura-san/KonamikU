@@ -38,7 +38,7 @@
     <string name="notif_action_next_card">다음 카드</string>
 
     <string name="status_nfc_rf">NFC 무선</string>
-    <string name="status_lsposed">LSPosed</string>
+    <string name="status_lsposed">Xposed 프레임워크</string>
     <string name="status_pmmtool">PMm 도구</string>
     <string name="status_hcef">HCE-F</string>
     <string name="status_available">사용 가능</string>
@@ -178,8 +178,8 @@
     <string name="dialog_nfc_enable_desc">root로 NFC 서비스를 활성화할까요? 앱이 일시적으로 응답하지 않을 수 있습니다.</string>
     <string name="dialog_nfc_restart_title">NFC 재시작</string>
     <string name="dialog_nfc_restart_desc">root로 NFC 서비스를 재시작할까요?\n\ncom.android.nfc를 종료하고 다시 시작합니다.</string>
-    <string name="dialog_xposed_refresh_title">LSPosed 새로고침</string>
-    <string name="dialog_xposed_refresh_desc">LSPosed 모듈 상태를 다시 확인할까요?</string>
+    <string name="dialog_xposed_refresh_title">프레임워크 상태 새로고침</string>
+    <string name="dialog_xposed_refresh_desc">모듈 프레임워크 상태를 다시 확인할까요?</string>
     <string name="toast_nfc_pid_killed">com.android.nfc pid %s 종료됨</string>
     <string name="toast_nfc_restarting">com.android.nfc 재시작 중</string>
     <string name="toast_nfc_pid_restarted">com.android.nfc pid %s 재시작됨</string>
