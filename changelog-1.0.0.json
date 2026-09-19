@@ -1,0 +1,358 @@
+{
+  "version_name": "1.0.0",
+  "date": "2026-09-20",
+  "previous_changelog": null,
+  "next_changelog": null,
+  "commits": [
+    {
+      "hash": "7abe6a8e117848e1bb71d5d12b0d57286701b6e1",
+      "title": "Initial commit",
+      "body": ""
+    },
+    {
+      "hash": "\nb215e4a77d37d26a97affcd18c166d0d54b6aabb",
+      "title": "via upload",
+      "body": "still wip\n"
+    },
+    {
+      "hash": "\n66949fc1d5333c6f62f8177699e32464d2e07e83",
+      "title": "support set as default payment app",
+      "body": "idk if really required, might be removed.. maybe?\n"
+    },
+    {
+      "hash": "\nf93d88dc31e3e9a333deee6d715b47b7c0818154",
+      "title": "bump a toast when scanned.",
+      "body": ""
+    },
+    {
+      "hash": "\n5d4cce85f34d70f8ff228a1cda60ffa754468acf",
+      "title": "rm unused res",
+      "body": ""
+    },
+    {
+      "hash": "\n1d7c114cbf9d13810dd133feac9665ae2171aaf3",
+      "title": "optimize via ide",
+      "body": ""
+    },
+    {
+      "hash": "\n5470455548fb7d544bd15cdd24c152736381ca81",
+      "title": "i18nify",
+      "body": ""
+    },
+    {
+      "hash": "\n9d719e00b34f335d0d3d1be4d527a41551f46678",
+      "title": "Support 02FE native",
+      "body": "inspired form https://github.com/juchan1220/eAMEMu_RN\n"
+    },
+    {
+      "hash": "\na00dc4acceeeff20bd69427baf2725559644f0af",
+      "title": "still wip",
+      "body": ""
+    },
+    {
+      "hash": "\ne0f518d5fd58c2b9ae066067eda5db1bbfea0ac9",
+      "title": "rm unused src",
+      "body": ""
+    },
+    {
+      "hash": "\nf0a9020a8544bc02f10c6aa548ff4119273c9eba",
+      "title": "support manual update, refactor converter GUI",
+      "body": ""
+    },
+    {
+      "hash": "\n3bedb8114fc490ac1286f4e8bd642980c6f235ef",
+      "title": "Finally?",
+      "body": ""
+    },
+    {
+      "hash": "\nfaf33186aa0bf71a656a7cacb345dd4054be90b2",
+      "title": "new icon, bring root detect back,more long press",
+      "body": ""
+    },
+    {
+      "hash": "\n9b3e8e07285c1748ef9257da5e0b7d83280b86b0",
+      "title": "refactor the NFC Restart and root detect",
+      "body": ""
+    },
+    {
+      "hash": "\n9ca244c345402f5bed8ca12f07f5227ba356e2b4",
+      "title": "update versioncode and xposed description",
+      "body": ""
+    },
+    {
+      "hash": "\nad86b3978f76c737a07d8f13a53741fdf4797de8",
+      "title": "fix something..",
+      "body": ""
+    },
+    {
+      "hash": "\nd8898fcf0c79c5dc2a90fb40a06291cc8bd4447f",
+      "title": "better logic when inactive",
+      "body": ""
+    },
+    {
+      "hash": "\n2c0cab85f1e4b4ce1178124e3b8b37cf0c1a9288",
+      "title": "using r8",
+      "body": ""
+    },
+    {
+      "hash": "\n23d885c0dcd675fa08156e1bade08c6ba0a9d482",
+      "title": "done?",
+      "body": ""
+    },
+    {
+      "hash": "\n853173ba6bb276e879728290a65f9b9f6226c943",
+      "title": "add switch when notified",
+      "body": ""
+    },
+    {
+      "hash": "\n8da7707d3914e4b3cb9a5d4bdb0d8cccd8c36c1d",
+      "title": "fix",
+      "body": ""
+    },
+    {
+      "hash": "\ne5408be4270add59d6feb1c642e80b01b56ffd6b",
+      "title": "betterLogic",
+      "body": ""
+    },
+    {
+      "hash": "\nc5aa30cf751fce44c4b523fa9e1de10e3b49fdb7",
+      "title": "finally revert....",
+      "body": ""
+    },
+    {
+      "hash": "\naf69f0086173fc138804d58b8bf77ae888d5e1fd",
+      "title": "refresh",
+      "body": ""
+    },
+    {
+      "hash": "\n48bf776508b8146fe4e1eb48ad27cb3b6749c482",
+      "title": "rm default nfc switch",
+      "body": ""
+    },
+    {
+      "hash": "\nba60bf4953835902f403013b5b8680427b08da01",
+      "title": "upgrade to md3e",
+      "body": ""
+    },
+    {
+      "hash": "\n54fb6cbddecc546d171601fcf76c7385b423be9b",
+      "title": "md3/md3e switch",
+      "body": ""
+    },
+    {
+      "hash": "\n9a228dbd8659ce65c8805a3c7be1fd23a99acc2a",
+      "title": "more md3/md3e",
+      "body": ""
+    },
+    {
+      "hash": "\neb385c521ac078f6a9e8df1dd4d65c8296cdd12c",
+      "title": "idk",
+      "body": ""
+    },
+    {
+      "hash": "\n70f42fa490693bbeb3189709312da39f40d49cc2",
+      "title": "finally nfc fixed",
+      "body": ""
+    },
+    {
+      "hash": "\nf14a84a1e83ee40c306c9dba5f38fb592093ae0b",
+      "title": "better theme",
+      "body": ""
+    },
+    {
+      "hash": "\nc722a478a77a18493cc177f15f04f740f2c82171",
+      "title": "refresh",
+      "body": ""
+    },
+    {
+      "hash": "\neac097094c3f7ef5fa2ec0479117c10a1620f62c",
+      "title": "fix an err",
+      "body": ""
+    },
+    {
+      "hash": "\n91244ccc8de4feefefaa03a1109f41b9ae844af8",
+      "title": "major update",
+      "body": ""
+    },
+    {
+      "hash": "\nde52347e4743b68ddd878008f94897615b0492b8",
+      "title": "upgrade i18n",
+      "body": ""
+    },
+    {
+      "hash": "\n225a7541fa1c10359043b23588872734858dab0c",
+      "title": "fix a minor err",
+      "body": ""
+    },
+    {
+      "hash": "\nd285d9e6d52b71e49d8f3ac10225896b0161c99b",
+      "title": "better i18n, and using submodule",
+      "body": ""
+    },
+    {
+      "hash": "\ne6679c422b02e03a4a4f3939cb8eda743aa6ae20",
+      "title": "seamless lang switch & initial oobe support",
+      "body": ""
+    },
+    {
+      "hash": "\n3dff58a6cd8ceae0b9aa00d56f67aa9b7eefb13e",
+      "title": "more of oobe, and better detect",
+      "body": ""
+    },
+    {
+      "hash": "\n80c76f1fc8d194bcb887cc2caf75950a7645d5a1",
+      "title": " inital version check",
+      "body": ""
+    },
+    {
+      "hash": "\n000673b3b48811e3b50e8e969295a7c02c474967",
+      "title": "more of update check",
+      "body": ""
+    },
+    {
+      "hash": "\n4786fbd774e35eb4d63e662e9e6f712990fd1863",
+      "title": "better update",
+      "body": ""
+    },
+    {
+      "hash": "\nfbb3d1792c55ad4505bb9c0a61a3d277c0690baf",
+      "title": "wtf...",
+      "body": "...ftw\n"
+    },
+    {
+      "hash": "\nc7f8ff616bc67e29a131cc7d035fde6aea946854",
+      "title": "harder.",
+      "body": "softer.\n"
+    },
+    {
+      "hash": "\nf5f12de5705ba004797c139649332c719a96bc51",
+      "title": "switch to info branch, update readme",
+      "body": ""
+    },
+    {
+      "hash": "\ned556a97cdf75cec8cbdd25b45249b2d455ae61b",
+      "title": "better i18n, support import/export, fix minor err",
+      "body": ""
+    },
+    {
+      "hash": "\n56b015364d58e1e830bcc11b5a9c9b8afcda5a16",
+      "title": "fix sync",
+      "body": ""
+    },
+    {
+      "hash": "\n8e22156914ba851e042b93da86e6d41a6565747c",
+      "title": "using absolute link to compat with xposed repo",
+      "body": ""
+    },
+    {
+      "hash": "\n6f32afac60a8bc87f7576e74a0db1e635405fc18",
+      "title": "add WAKE_LOCK, fix some err",
+      "body": "to be honest, its so awkward......\nwhen i playing maimai DX jp\n"
+    },
+    {
+      "hash": "\n8e25a38723ebadf1342ae7da780eca83d33a2c3b",
+      "title": "auto shrink",
+      "body": ""
+    },
+    {
+      "hash": "\nd044b6979d34403a611e2f4ad006d89fb30a9e59",
+      "title": "add a test feature,  for spec device works without xposed",
+      "body": ""
+    },
+    {
+      "hash": "\n708a676630d0805d68864d71667fa85184ca52f7",
+      "title": "major update",
+      "body": "0. support auto update check\n1. DataStore only now, and better logic for lang/update mode\n2. better nfc\n3. other minor fix\n4. support UnitTest(?)\n"
+    },
+    {
+      "hash": "\ndcea8c1eedf19a507ea0cc184ffdebdbd5546bc5",
+      "title": "FIX",
+      "body": ""
+    },
+    {
+      "hash": "\n809d603c32df89b2a04730ae376fb6839a05c0fe",
+      "title": "upgrading to libxposed 102, using new api",
+      "body": "btw refresh m3e\n"
+    },
+    {
+      "hash": "\nb3885434b07882af689f3dec7f76c3d2c77fe556",
+      "title": "auto shrink",
+      "body": ""
+    },
+    {
+      "hash": "\n784570ebfd6b80c0bbb8380eb3c1714ccb8b9d43",
+      "title": "better logic for status bar long press",
+      "body": ""
+    },
+    {
+      "hash": "\nb5a430d98a27c96ecd608accc0ca7cc2bc532b24",
+      "title": "rename the hidden api",
+      "body": "hidden api is just Native_Support_Felica, e.g device sold in japan\n"
+    },
+    {
+      "hash": "\n1f61488840d9dafaaf2a1fd7c265c91521ded4e4",
+      "title": "decoupling pmm tools to xposed long press alert",
+      "body": ""
+    },
+    {
+      "hash": "\n58767d029801d08655698e071dff601bd8dcf5cd",
+      "title": "better pmm config",
+      "body": ""
+    },
+    {
+      "hash": "\nbe7d48a851cd8a862a0b0970fb8d9339fb9546e0",
+      "title": "better language choose logic and l10n",
+      "body": ""
+    },
+    {
+      "hash": "\n1cd46bc2d17221ee60b2981c0ea8f3ab1242759a",
+      "title": "fix i18n",
+      "body": ""
+    },
+    {
+      "hash": "\n53fe140764d04154be633359eba4094dd61c64c6",
+      "title": "new icon, and add extra emulate logic",
+      "body": ""
+    },
+    {
+      "hash": "\nc2461df9078a00b24fa26685cd53a1579fd1da6b",
+      "title": "Add Vector-aware framework fallback detection",
+      "body": "Co-authored-by: sensura-san <103641784+sensura-san@users.noreply.github.com>\n"
+    },
+    {
+      "hash": "\n1ca968bcf36920d1cf9d4d72af151a036279bb7b",
+      "title": "Verify metadata wiring and attempt build validation",
+      "body": "Co-authored-by: sensura-san <103641784+sensura-san@users.noreply.github.com>\n"
+    },
+    {
+      "hash": "\n2a89c63d2474a60c8ebe2e61ab868efea248095e",
+      "title": "Preserve framework fallback on blank service metadata",
+      "body": "Co-authored-by: sensura-san <103641784+sensura-san@users.noreply.github.com>\n"
+    },
+    {
+      "hash": "\n06635ae474b827edfcf5090e14b9861bea5e59ff",
+      "title": "Merge pull request #1 from sensura-san/copilot/add-vector-detection",
+      "body": "Add Vector-aware framework detection fallback for Xposed/PMM status flow"
+    },
+    {
+      "hash": "\n514bf1df99d0543dc4e4d83524ee4ed9147fec5d",
+      "title": "Create gradle-build.yml",
+      "body": ""
+    },
+    {
+      "hash": "\n535da306141e42c30b46ab5d9ee703cf860350b5",
+      "title": "fix(ci): fix gradle package formatting",
+      "body": ""
+    },
+    {
+      "hash": "\n89047e1a48e8bc03fa8ef55b2d37199c50ea0a61",
+      "title": "fix(ci): maybe lol",
+      "body": ""
+    },
+    {
+      "hash": "\nf1f9e8bfbdb5514e7aaaff0074e979e4154944a2",
+      "title": "ci: only trigger on release",
+      "body": ""
+    }
+  ]
+}
