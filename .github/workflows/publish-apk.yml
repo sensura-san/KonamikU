@@ -1,0 +1,148 @@
+name: Publish Existing APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Release to upload the APK to
+        required: true
+        type: choice
+        default: newest
+        options:
+          - newest
+          - specific
+
+      target_tag:
+        description: Tag to use when target is "specific" (e.g. v1.2.0)
+        required: false
+        type: string
+
+      source_run_id:
+        description: Build workflow run ID; blank uses newest successful run
+        required: false
+        type: string
+
+      artifact_name:
+        description: Name of the APK workflow artifact
+        required: true
+        default: konamiku-release-apk
+        type: string
+
+      replace_existing:
+        description: Replace release assets with the same filename
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Find source workflow run
+        id: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_RUN_ID: ${{ inputs.source_run_id }}
+        run: |
+          set -euo pipefail
+
+          if [[ -n "$REQUESTED_RUN_ID" ]]; then
+            run_id="$REQUESTED_RUN_ID"
+          else
+            run_id="$(
+              gh run list \
+                --repo "$GITHUB_REPOSITORY" \
+                --workflow "Build Android APK" \
+                --status success \
+                --limit 1 \
+                --json databaseId \
+                --jq '.[0].databaseId'
+            )"
+          fi
+
+          if [[ -z "$run_id" || "$run_id" == "null" ]]; then
+            echo "::error::No successful Build Android APK run was found."
+            exit 1
+          fi
+
+          echo "Using workflow run: $run_id"
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+
+      - name: Download APK artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ steps.source.outputs.run_id }}
+          ARTIFACT_NAME: ${{ inputs.artifact_name }}
+        run: |
+          set -euo pipefail
+
+          gh run download "$RUN_ID" \
+            --repo "$GITHUB_REPOSITORY" \
+            --name "$ARTIFACT_NAME" \
+            --dir downloaded-artifact
+
+      - name: Choose target release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_MODE: ${{ inputs.target }}
+          REQUESTED_TAG: ${{ inputs.target_tag }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$TARGET_MODE" == "newest" ]]; then
+            target_tag="$(
+              gh release view \
+                --repo "$GITHUB_REPOSITORY" \
+                --json tagName \
+                --jq '.tagName'
+            )"
+          else
+            if [[ -z "$REQUESTED_TAG" ]]; then
+              echo "::error::target_tag is required when target is specific."
+              exit 1
+            fi
+
+            target_tag="$REQUESTED_TAG"
+          fi
+
+          # Verify that the chosen release exists
+          gh release view "$target_tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            >/dev/null
+
+          echo "Uploading to release: $target_tag"
+          echo "tag=$target_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Upload APK to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_TAG: ${{ steps.release.outputs.tag }}
+          REPLACE_EXISTING: ${{ inputs.replace_existing }}
+        run: |
+          set -euo pipefail
+
+          mapfile -d '' apk_files < <(
+            find downloaded-artifact -type f -name '*.apk' -print0
+          )
+
+          if (( ${#apk_files[@]} == 0 )); then
+            echo "::error::The downloaded artifact contained no APK files."
+            exit 1
+          fi
+
+          if [[ "$REPLACE_EXISTING" == "true" ]]; then
+            gh release upload "$TARGET_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --clobber \
+              "${apk_files[@]}"
+          else
+            gh release upload "$TARGET_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              "${apk_files[@]}"
+          fi
