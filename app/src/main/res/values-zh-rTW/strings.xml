@@ -38,7 +38,7 @@
     <string name="notif_action_next_card">下一張卡</string>
 
     <string name="status_nfc_rf">NFC 射頻</string>
-    <string name="status_lsposed">LSPosed</string>
+    <string name="status_lsposed">Xposed 框架</string>
     <string name="status_pmmtool">PMm 工具</string>
     <string name="status_hcef">HCE-F</string>
     <string name="status_available">可用</string>
@@ -178,8 +178,8 @@
     <string name="dialog_nfc_enable_desc">透過 root 啟用 NFC 服務？應用程式可能會短暫無回應。</string>
     <string name="dialog_nfc_restart_title">重新啟動 NFC</string>
     <string name="dialog_nfc_restart_desc">透過 root 重新啟動 NFC 服務？\n\n將終止並重新啟動 com.android.nfc。</string>
-    <string name="dialog_xposed_refresh_title">重新整理 LSPosed</string>
-    <string name="dialog_xposed_refresh_desc">重新檢查 LSPosed 模組狀態？</string>
+    <string name="dialog_xposed_refresh_title">重新整理框架狀態</string>
+    <string name="dialog_xposed_refresh_desc">重新檢查模組框架狀態？</string>
     <string name="toast_nfc_pid_killed">com.android.nfc 程序 %s 已終止</string>
     <string name="toast_nfc_restarting">com.android.nfc 正在重新啟動</string>
     <string name="toast_nfc_pid_restarted">com.android.nfc 程序 %s 已重新啟動</string>

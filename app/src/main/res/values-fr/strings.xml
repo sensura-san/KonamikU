@@ -38,7 +38,7 @@
     <string name="notif_action_next_card">Carte suivante</string>
 
     <string name="status_nfc_rf">Radio NFC</string>
-    <string name="status_lsposed">LSPosed</string>
+    <string name="status_lsposed">Framework Xposed</string>
     <string name="status_pmmtool">Outil PMm</string>
     <string name="status_hcef">HCE-F</string>
     <string name="status_available">Disponible</string>
@@ -178,8 +178,8 @@
     <string name="dialog_nfc_enable_desc">Activer le service NFC via root ? L\'application peut ne pas répondre brièvement.</string>
     <string name="dialog_nfc_restart_title">Redémarrer NFC</string>
     <string name="dialog_nfc_restart_desc">Redémarrer le service NFC via root ?\n\nCela tuera et redémarrera com.android.nfc.</string>
-    <string name="dialog_xposed_refresh_title">Actualiser LSPosed</string>
-    <string name="dialog_xposed_refresh_desc">Re-vérifier l\'état du module LSPosed ?</string>
+    <string name="dialog_xposed_refresh_title">Actualiser le statut du framework</string>
+    <string name="dialog_xposed_refresh_desc">Revérifier l\'état du framework du module ?</string>
     <string name="toast_nfc_pid_killed">com.android.nfc pid %s terminé</string>
     <string name="toast_nfc_restarting">com.android.nfc redémarre</string>
     <string name="toast_nfc_pid_restarted">com.android.nfc pid %s redémarré</string>

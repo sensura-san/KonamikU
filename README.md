@@ -45,7 +45,7 @@ Extend NFC Capabilities
 - **Android 10+** (API 29+)
 - **Device with HCE-F / NFC-F support**
 - **Root** (Magisk / KernelSU / APatch) — optional, enables advanced features
-- **LSPosed** — optional, enables hook optimizations
+- **LSPosed / Vector** — optional, enables hook optimizations
 
 ---
 

@@ -38,7 +38,7 @@
     <string name="notif_action_next_card">次のカード</string>
 
     <string name="status_nfc_rf">NFC無線</string>
-    <string name="status_lsposed">LSPosed</string>
+    <string name="status_lsposed">Xposed フレームワーク</string>
     <string name="status_pmmtool">PMmツール</string>
     <string name="status_hcef">HCE-F</string>
     <string name="status_available">利用可能</string>
@@ -178,8 +178,8 @@
     <string name="dialog_nfc_enable_desc">rootでNFCサービスを有効にしますか？アプリが一時的に応答しなくなる可能性があります。</string>
     <string name="dialog_nfc_restart_title">NFCを再起動</string>
     <string name="dialog_nfc_restart_desc">rootでNFCサービスを再起動しますか？\n\ncom.android.nfcを強制終了して再起動します。</string>
-    <string name="dialog_xposed_refresh_title">LSPosedを更新</string>
-    <string name="dialog_xposed_refresh_desc">LSPosedモジュールの状態を再確認しますか？</string>
+    <string name="dialog_xposed_refresh_title">フレームワーク状態を更新</string>
+    <string name="dialog_xposed_refresh_desc">モジュールのフレームワーク状態を再確認しますか？</string>
     <string name="toast_nfc_pid_killed">com.android.nfc pid %s を強制終了</string>
     <string name="toast_nfc_restarting">com.android.nfc を再起動中</string>
     <string name="toast_nfc_pid_restarted">com.android.nfc pid %s を再起動</string>
